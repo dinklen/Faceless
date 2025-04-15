@@ -2,6 +2,7 @@
 
 #include "IWelcomePageState.hpp"
 
+// Welcome page state
 class WelcomePageState: public IWelcomePageState {
 public:
     void help() override;

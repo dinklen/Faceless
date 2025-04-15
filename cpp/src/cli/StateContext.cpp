@@ -1,10 +1,11 @@
 #include "../../include/cli/StateContext.hpp"
-#include "../../include/cli/IState.hpp"
 
 #include <memory>
 
-StateContext::StateContext(std::unique_ptr<IState>& state): state_(state) {}
+StateContext::StateContext() {
+    setState(std::make_unique<WelcomePageState>());
+}
 
-void StateContext::setState(std::unique_ptr<IState>& newState) {
-    state_ = newState
+void StateContext::setState(std::uninque_ptr<IState> newState) {
+    state = std::move(newState);
 }

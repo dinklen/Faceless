@@ -2,6 +2,7 @@
 
 #include "IAccountState.hpp"
 
+// Account state
 class AccountState: public IAccountState {
 public:
     void help() override;

@@ -2,13 +2,11 @@
 
 #include <string>
 
+// Basic interface state
 class IState {
 public:
-    IState(const std::string& name);
+    virtual ~IState() = default;
 
     virtual void help() = 0;
     virtual void exit() = 0;
-
-public:
-    std::string name;
 };

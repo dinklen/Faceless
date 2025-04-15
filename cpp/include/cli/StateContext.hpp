@@ -4,12 +4,13 @@
 
 #include <memory>
 
+// State context
 class StateContext {
 public:
-    StateContext(std::unique_ptr<IState>& state);
+    StateContext();
 
-    void setState(std::uninque_ptr<IState>& newState);
+    void setState(std::uninque_ptr<IState> newState);
 
-private:
-    std::unique_ptr<IState> state_;
+public:
+    std::unique_ptr<IState> state;
 };
