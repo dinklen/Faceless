@@ -33,3 +33,4 @@
 
 # C++ Build
 build/
+logs/

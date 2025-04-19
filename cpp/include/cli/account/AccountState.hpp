@@ -10,7 +10,11 @@ public:
 
     void open() override;
     void del() override;
+    void goTo() override;
     void rename() override;
     void select() override;
     void deselect() override;
+    void notifications() override;
+    void synchronizeServer() override;
+    void synchronizeDevice() override;
 };
